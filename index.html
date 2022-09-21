@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="reset.css">
-        <link rel="shortcun icon" href="/imagens/logo.png">
+        <link rel="shortcun icon" href="imagens/logo.png">
         <title>Calculadora do Gustavo :)</title>
     </head>
 
@@ -12,25 +12,26 @@
         <div class="container">
             <div id="display"></div>
             <div class="botoes">
-                <button class="botao">AC</button>
-                <button class="botao">Delete</button>
-                <button class="botao">,</button>
-                <button class="botao">1</button>
-                <button class="botao">2</button>
-                <button class="botao">3</button>
-                <button class="botao">4</button>
-                <button class="botao">5</button>
-                <button class="botao">6</button>
-                <button class="botao">7</button>
-                <button class="botao">8</button>
-                <button class="botao">9</button>
-                <button class="botao">0</button>
-                <button class="botao">-</button>
-                <button class="botao">+</button>
-                <button class="botao">÷</button>
-                <button class="botao">x</button>
-                <button class="botao">=</button>
+                <button class="botao" onclick="limpa()">AC</button>
+                <button class="botao" onclick="troca_sinal()">+/-</button>
+                <button class="botao" onclick="insere('.')">.</button>
+                <button class="botao" onclick="insere('1')">1</button>
+                <button class="botao" onclick="insere('2')">2</button>
+                <button class="botao" onclick="insere('3')">3</button>
+                <button class="botao" onclick="insere('4')">4</button>
+                <button class="botao" onclick="insere('5')">5</button>
+                <button class="botao" onclick="insere('6')">6</button>
+                <button class="botao" onclick="insere('7')">7</button>
+                <button class="botao" onclick="insere('8')">8</button>
+                <button class="botao" onclick="insere('9')">9</button>
+                <button class="botao" onclick="insere('0')">0</button>
+                <button class="botao" onclick="insere('-')">-</button>
+                <button class="botao" onclick="insere('+')">+</button>
+                <button class="botao" onclick="insere('/')">÷</button>
+                <button class="botao" onclick="insere('*')">x</button>
+                <button class="botao" onclick="calcula()">=</button>
             </div>
         </div>
     </body>
+    <script src="calculo.js"></script>
 </html>
